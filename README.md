@@ -70,3 +70,12 @@ Durante a construção da imagem, o script init.sh inclui o comando keytool para
 ```ini
     keytool -import -alias "$alias_name" -file "$pem" -keystore $JAVA_HOME/lib/security/cacerts -storepass changeit -noprompt
 ```
+
+
+### 7. Importação inicial de data
+O arquivo data.sql possui um simples insert de dados para deixar a aplicação disponível para uso. 
+Usuário:
+```
+username: Admin
+password: @dm1n
+```
