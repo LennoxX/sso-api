@@ -68,7 +68,7 @@ A aplicação será visível a partir de um api-gateway, reconhecido através do
 ### 6. Gerenciamento de Certificados e Truststore
 Durante a construção da imagem, o script init.sh inclui o comando keytool para adicionar o certificado .pem ao truststore do Java. Isso garante que o API Gateway confie no certificado utilizado para SSL.
 ```ini
-    keytool -import -alias "$alias_name" -file "$pem" -keystore $JAVA_HOME/lib/security/cacerts -storepass changeit -noprompt
+keytool -import -alias "$alias_name" -file "$pem" -keystore $JAVA_HOME/lib/security/cacerts -storepass changeit -noprompt
 ```
 
 
